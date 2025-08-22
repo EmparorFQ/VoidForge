@@ -1,0 +1,27 @@
+name: VoidForge
+version: 1.2.0
+main: org.Emp.VoidForge.VoidForge
+api-version: "1.20"
+
+commands:
+  createvoid:
+    description: Create a new void world
+    usage: /createvoid <world-name>
+  gotovoid:
+    description: Teleport to a void world
+    usage: /gotovoid <world-name>
+  renamevoid:
+    description: Rename a void world
+    usage: /renamevoid <old-name> <new-name>
+  deletevoid:
+    description: Delete a void world
+    usage: /deletevoid <world-name>
+  listvoids:
+    description: List all void worlds
+    usage: /listvoids
+  loadvoid:
+    description: Manually load a void world
+    usage: /loadvoid <world-name>
+  voiddebug:
+    description: Debug information for void worlds
+    usage: /voiddebug

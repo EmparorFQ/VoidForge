@@ -1,0 +1,58 @@
+# VoidGenerator Türkçe Dil Dosyası
+plugin_enabled: "╔══════════════════════════════════════╗\n║                                      ║\n║   VoidForge Aktif Edildi!            ║\n║   Yaratılışın Boşluğuna Hazır Olun!  ║\n║                                      ║\n╚══════════════════════════════════════╝"
+plugin_disabled: "╔══════════════════════════════════════╗\n║                                      ║\n║   VoidForge Devre Dışı Bırakıldı     ║\n║      Sonsuzluğa Elveda...            ║\n║                                      ║\n╚══════════════════════════════════════╝"
+
+commands:
+  createvoid:
+    usage: "§cKullanım: /createvoid <dünya-ismi>"
+    success: "§a§lVOID §8» §fBoş dünya oluşturuldu: §e%world%"
+    teleported: "§a§lVOID §8» §fSpawn platformunun ortasına ışınlandınız!"
+    exists: "§c§lVOID §8» §fBu isimde bir dünya zaten mevcut!"
+    invalid_name: "§c§lVOID §8» §fGeçersiz dünya ismi! Sadece [a-z0-9_-] karakterlerini kullanabilirsiniz."
+    failed: "§c§lVOID §8» §fDünya oluşturulamadı!"
+
+  gotovoid:
+    usage: "§cKullanım: /gotovoid <dünya-ismi>"
+    not_found: "§c§lVOID §8» §fBu isimde bir void dünyası bulunamadı!"
+    teleported: "§a§lVOID §8» §f%world% dünyasına ışınlandınız!"
+    load_failed: "§c§lVOID §8» §fDünya yüklenemedi!"
+    player_only: "§cBu komut sadece oyuncular tarafından kullanılabilir!"
+
+  renamevoid:
+    usage: "§cKullanım: /renamevoid <eski-isim> <yeni-isim>"
+    success: "§a§lVOID §8» §fDünya başarıyla yeniden adlandırıldı: §e%old% §f→ §a%new%"
+    old_not_found: "§c§lVOID §8» §f'%world%' isimli bir void dünyası bulunamadı!"
+    new_exists: "§c§lVOID §8» §f'%world%' isimli bir dünya zaten mevcut!"
+    main_world: "§c§lVOID §8» §fAna dünyayı yeniden adlandıramazsınız!"
+    unload_failed: "§c§lVOID §8» §fDünya boşaltılamadı! Yeniden adlandırma başarısız."
+    rename_failed: "§c§lVOID §8» §fDünya yeniden adlandırılamadı! Klasör işlemi başarısız."
+    load_error: "§c§lVOID §8» §fDünya yüklenirken hata oluştu!"
+    teleport_players: "§6§lVOID §8» §fDünya yeniden adlandırıldığı için ana dünyaya ışınlandınız!"
+
+  deletevoid:
+    usage: "§cKullanım: /deletevoid <dünya-ismi>"
+    success: "§a§lVOID §8» §fDünya başarıyla silindi: §e%world%"
+    not_found: "§c§lVOID §8» §f'%world%' isimli bir void dünyası bulunamadı!"
+    main_world: "§c§lVOID §8» §fAna dünyayı silemezsiniz!"
+    unload_failed: "§c§lVOID §8» §fDünya boşaltılamadı! Silme işlemi başarısız."
+    delete_failed: "§c§lVOID §8» §fDünya klasörü silinemedi! Manuel olarak silmeniz gerekebilir."
+    teleport_players: "§6§lVOID §8» §fDünya silindiği için ana dünyaya ışınlandınız!"
+
+  listvoids:
+    no_worlds: "§6§lVOID §8» §fHiç void dünyası bulunamadı!"
+    header: "§6§lVOID §8» §fMevcut void dünyaları:"
+    world_entry: "§8- §e%world% §7(§f%players% oyuncu§7)"
+    world_unloaded: "§8- §c%world% §7(§cyüklenmemiş§7)"
+
+  voiddebug:
+    header: "§6=== VoidForge Debug ==="
+    loaded_worlds: "§eYüklü dünyalar: §f%count%"
+    world_entry: "§b%world%: §aYüklü §8| §aDosya Var"
+    world_entry_unloaded: "§b%world%: §cYüklenmemiş §8| §aDosya Var"
+    world_no_file: "§b%world%: §cYüklenmemiş §8| §cDosya Yok"
+
+worlds_loaded: "Toplam %count% void dünyası yüklendi."
+world_loaded: "Void dünyası yüklendi: %world%"
+world_load_error: "Dünya yüklenirken hata oluştu: %world%"
+available_worlds: "§6§lVOID §8» §fMevcut dünyalar: %worlds%"
+no_worlds_available: "§cHiç void dünyası yok"

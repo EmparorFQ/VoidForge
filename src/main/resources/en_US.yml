@@ -1,0 +1,58 @@
+# VoidGenerator English Language File
+plugin_enabled: "╔══════════════════════════════════════╗\n║                                      ║\n║      VoidForge Enabled!              ║\n║     Prepare for the Void Creation!   ║\n║                                      ║\n╚══════════════════════════════════════╝"
+plugin_disabled: "╔══════════════════════════════════════╗\n║                                      ║\n║      VoidForge Disabled!             ║\n║       Farewell to Infinity...        ║\n║                                      ║\n╚══════════════════════════════════════╝"
+
+commands:
+  createvoid:
+    usage: "§cUsage: /createvoid <worldname>"
+    success: "§a§lVOID §8» §fVoid world created: §e%world%"
+    teleported: "§a§lVOID §8» §fTeleported to spawn platform center!"
+    exists: "§c§lVOID §8» §fA world with this name already exists!"
+    invalid_name: "§c§lVOID §8» §fInvalid world name! You can only use [a-z0-9_-] characters."
+    failed: "§c§lVOID §8» §fWorld creation failed!"
+
+  gotovoid:
+    usage: "§cUsage: /gotovoid <worldname>"
+    not_found: "§c§lVOID §8» §fNo void world found with this name!"
+    teleported: "§a§lVOID §8» §fTeleported to world: %world%"
+    load_failed: "§c§lVOID §8» §fWorld failed to load!"
+    player_only: "§cThis command can only be used by players!"
+
+  renamevoid:
+    usage: "§cUsage: /renamevoid <oldname> <newname>"
+    success: "§a§lVOID §8» §fWorld successfully renamed: §e%old% §f→ §a%new%"
+    old_not_found: "§c§lVOID §8» §fNo void world found named '%world%'!"
+    new_exists: "§c§lVOID §8» §fA world named '%world%' already exists!"
+    main_world: "§c§lVOID §8» §fCannot rename the main world!"
+    unload_failed: "§c§lVOID §8» §fWorld could not be unloaded! Rename failed."
+    rename_failed: "§c§lVOID §8» §fWorld could not be renamed! Folder operation failed."
+    load_error: "§c§lVOID §8» §fError loading world!"
+    teleport_players: "§6§lVOID §8» §fTeleported to main world because the world was renamed!"
+
+  deletevoid:
+    usage: "§cUsage: /deletevoid <worldname>"
+    success: "§a§lVOID §8» §fWorld successfully deleted: §e%world%"
+    not_found: "§c§lVOID §8» §fNo void world found named '%world%'!"
+    main_world: "§c§lVOID §8» §fCannot delete the main world!"
+    unload_failed: "§c§lVOID §8» §fWorld could not be unloaded! Delete failed."
+    delete_failed: "§c§lVOID §8» §fWorld folder could not be deleted! You may need to delete it manually."
+    teleport_players: "§6§lVOID §8» §fTeleported to main world because the world was deleted!"
+
+  listvoids:
+    no_worlds: "§6§lVOID §8» §fNo void worlds found!"
+    header: "§6§lVOID §8» §fAvailable void worlds:"
+    world_entry: "§8- §e%world% §7(§f%players% players§7)"
+    world_unloaded: "§8- §c%world% §7(§cunloaded§7)"
+
+  voiddebug:
+    header: "§6=== VoidForge Debug ==="
+    loaded_worlds: "§eLoaded worlds: §f%count%"
+    world_entry: "§b%world%: §aLoaded §8| §aFile Exists"
+    world_entry_unloaded: "§b%world%: §cUnloaded §8| §aFile Exists"
+    world_no_file: "§b%world%: §cUnloaded §8| §cFile Missing"
+
+worlds_loaded: "Total %count% void worlds loaded."
+world_loaded: "Void world loaded: %world%"
+world_load_error: "Error loading world: %world%"
+available_worlds: "§6§lVOID §8» §fAvailable worlds: %worlds%"
+no_worlds_available: "§cNo void worlds available"
